@@ -1,0 +1,56 @@
+.adverb {
+  background: #87CEEB;
+}
+
+.qualifier {
+  background: #87CEEB;
+}
+
+.passive {
+  background: #c4ed9d;
+}
+
+.complex {
+  background: #DA70D6;
+}
+
+.hardSentence {
+  background: #F0E68C;
+}
+
+.veryHardSentence {
+  background: #D99886;
+}
+
+#text-area,
+#output {
+  width: 100%;
+  border-radius: 8px;
+}
+
+#left {
+  width: 75%;
+  position: absolute;
+  left: 2.5%;
+}
+
+#botao {
+  margin-top: 10px;
+}
+
+#output {
+  margin-top: 10px;
+}
+
+#right {
+  width: 15%;
+  position: absolute;
+  right: 2.5%;
+}
+
+.counter {
+  position: relative;
+  padding: 5% 5%;
+  margin: 5% 0 0 5%;
+  border-radius: 8px;
+}
