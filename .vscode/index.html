@@ -1,45 +1,130 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="index.css">
-<title>ZordWay App</title>
-<link rel='icon' type='image/jpeg' href="../iconbranco.jpeg">
-<div>
-  <style>
-    body{
-    background-color: black;
-    }
-    p {
-        font-size: 17px;
-        font-family: "Star Wars";
-        color: #808080;
-    }
-    .trabalho{
-    margin-top: -170px;
-    }
-    
-    p::selection {
-        color: black;
-        background-color: white;
-    }
-    </style>
-    </head>
-    <img src= "../ícone.jpeg"height=200 widht=50>
-    <div class="trabalho"><p align="center"><img src= "../oi.jpeg"height=150 widht=500></p></div>
-  <div id="left">
-    <textarea name="" id="text-area" rows="10"></textarea>
-    <button onclick="format()">Corrija aqui!</button>
-    <div id="output"></div>
-  </div>
-  <div id="right">
-    <div id="adverb" class="adverb counter"></div>
-    <div id="passive" class="passive counter"></div>
-    <div id="complex" class="complex counter"></div>
-    <div id="hardSentence" class="hardSentence counter"></div>
-    <div id="veryHardSentence" class="veryHardSentence counter"></div>
-  </div>
 
+<head>
+  <meta charset="utf-8">
+  <title>ZordWay App</title>
+  <link rel="stylesheet" href="index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+</head>
+
+<body>
+  <header>
+    <div class="center">
+      <div class="logo">
+        <img src= "../logosite.png" height=150/>
+      </div>
+      <div class="menu">
+        <h1>Corrija textos de forma eficiente!</h1>
+      </div>
+    </div>
+  </header>
+  <section class="sobre">
+    <div class="extras">
+    </div>
+    <div class="funciona">
+    <div id="left">
+      <textarea name="" id="text-area" rows="10"></textarea>
+    <div id="botao"><button onclick="format()">Corrija aqui!</button></div>
+      <div id="output"></div>
+    </div>
+    <div id="right">
+      <div id="adverb" class="adverb counter"></div>
+      <div id="complex" class="complex counter"></div>
+      <div id="hardSentence" class="hardSentence counter"></div>
+      <div id="veryHardSentence" class="veryHardSentence counter"></div>
+    </div>
+  </section>
+  <div style="height:9000px";></div>
+  </div>
+</body>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .center {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 0 2%;
+  }
+
+  html,
+  body {
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+ header {
+    height: 200px;
+    padding: 30px 0;
+  }
+
+  .logo {
+    width: 30%;
+
+  }
+
+  .menu {
+    padding-top: 30px;
+    width: 40%;
+    text-align: center;
+  }
+
+  .menu a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+  }
+
+  section.sobre {
+    height: calc(100% - 200px);
+    position: relative;
+  }
+
+  .funciona button{
+    border: 0;
+    background-color: #1b3865;
+    color: #d3dbf6;
+    border-radius: 10px;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .extras {
+    position: absolute;
+    bottom: -650px;
+    right: -500px;
+    width: 1200px;
+    height: 1200px;
+    border-radius: 50%;
+    background-color: #1b3865;
+    max-height: 1150px;
+  }
+
+  body {
+    background-color: #d3dbf6;
+  }
+
+  p {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+  }
+
+  p::selection {
+    color: black;
+    background-color: white;
+  }
+</style>
 </div>
 <script src="index.js"></script>
+</html>
